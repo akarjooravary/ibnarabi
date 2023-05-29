@@ -1,0 +1,256 @@
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    touch-action: pan-y;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: orange;
+}
+
+
+
+
+.main {
+    width: 100vw;
+    height: 20000px;
+    z-index: 2;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vh;
+    background-color: black;
+    opacity: 1;
+}
+
+.title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    padding-top: 10vh;
+    color: white;
+    font-size: 30px;
+    opacity: 1;
+    padding-right: 20vw;
+    padding-left: 20vw;
+}
+
+.title_ar {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    direction: rtl;
+    font-weight: 500;
+    padding-top: 10vh;
+    color: white;
+    font-size: 30px;
+    opacity: 1;
+    padding-right: 20vw;
+    padding-left: 20vw;
+}
+
+
+.sub {
+    display: block;
+    clear: both;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    .title {
+        font-size: 30px;
+        padding-right: 30vw;
+        padding-left: 30vw;
+    }
+
+    .title_ar {
+        font-size: 30px;
+        padding-right: 30vw;
+        padding-left: 30vw;
+    }
+
+    .sub {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .title {
+        font-size: 30px;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+
+    .title_ar {
+        font-size: 30px;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+
+    .sub {
+        font-size: 18px;
+    }
+}
+
+
+#scrollProgress {
+    font-family: 'IBM Plex Mono', monospace;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 4;
+    font-size: 1em;
+    opacity: 0.5;
+}
+
+#scrollProgress_ar {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 4;
+    font-size: 1em;
+    opacity: 0.5;
+}
+
+.langbuttoncontainer {
+    font-size: 1em;
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    width: auto;
+    height: 2.5em;
+    z-index: 4;
+    opacity: 0.5;
+}
+
+.ar{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 2.5em;
+    height: 2.5em;
+    color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+.zoomin {
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 2.5em;
+    height: 2.5em;
+    color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Loader */
+
+#loader6 {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.loader-6 {
+	height: 32px;
+	width: 32px;
+}
+.loader-6 span {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 32px;
+	width: 32px;
+}
+.loader-6 span::before,
+.loader-6 span::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 32px;
+	width: 32px;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-animation: loader-6-1 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite;
+	        animation: loader-6-1 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) infinite;
+}
+@-webkit-keyframes loader-6-1 {
+	0%   { -webkit-transform: translate3d(0, 0, 0) scale(0); opacity: 1; }
+	100% { -webkit-transform: translate3d(0, 0, 0) scale(1.5); opacity: 0; }
+}
+@keyframes loader-6-1 {
+	0%   { transform: translate3d(0, 0, 0) scale(0); opacity: 1; }
+	100% { transform: translate3d(0, 0, 0) scale(1.5); opacity: 0; }
+}
+.loader-6 span::after {
+	-webkit-animation: loader-6-2 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) .25s infinite;
+	        animation: loader-6-2 1.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) .25s infinite;
+}
+@-webkit-keyframes loader-6-2 {
+	0%   { -webkit-transform: translate3d(0, 0, 0) scale(0); opacity: 1; }
+	100% { -webkit-transform: translate3d(0, 0, 0) scale(1); opacity: 0; }
+}
+@keyframes loader-6-2 {
+	0%   { transform: translate3d(0, 0, 0) scale(0); opacity: 1; }
+	100% { transform: translate3d(0, 0, 0) scale(1); opacity: 0; }
+}
+
+
+.center {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+}
