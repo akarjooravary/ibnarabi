@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="author" content="Sina Fakour" />
+        <title>Mapping the Unseen</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+        
+        <!-- Import maps polyfill -->
+        <!-- Remove this when import maps will be widely supported -->
+        <script
+            async
+            src="https://unpkg.com/es-module-shims@1.6.2/dist/es-module-shims.js"
+        ></script>
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "./js/three.module.js"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        
+        
+        <div id="main" class="main">
+            <p id="title" class="title">
+                Mapping the Unseen
+                    <span class="sub">
+                        <br>
+                        This is an interactive experience of a sequence of images in Chapter 371 of Ibn al-ʿArabī’s The Meccan Openings (al-Futūḥāt al-Makkiyya). He named this sequence “the Order of Coming into Being,” remarking that the images would have been a single composition if he had the space to fit them all. Instead, he used nine full pages, adapting text and image to the constraints of the physical codex to show their interrelationship. This website, an act of interpretation by <a href="https://www.alikarjooravary.com/home" target="_blank">Ali Karjoo-Ravary,</a> is an attempt to show them as a "single composition.” This project is based on Karjoo-Ravary's research in the following article, published by the Journal of Sufi Studies. 
+                        <a href="https://drive.google.com/file/d/1k_xrmlNTHfupOqN62BMWAlqGPwFDBcV-/view" target="_blank">(“Mapping the Unseen: Ibn al-‘Arabi’s Maps in al-Futūḥāt al-Makkiyya,” in Journal of Sufi Studies.)</a>
+                        <br><br>
+                        Design and coding:
+                        <br> 
+                        <a href="https://www.sinafakour.com/" target="_blank">Sina Fakour</a>
+                        <br><br>
+                        (Scroll Down)
+                    </span>
+            </p>
+            
+            
+<!--
+                رسم خرائط الغيب
+                    <span class="sub">
+                        <br>
+                        هذه تجربة تفاعلية لخرائط ابن العربي في الفصل 371 من رسوم الفتحات المكية بناءً على أبحاث <a href="https://www.alikarjooravary.com/home" target="_blank">علي كارجو رافاري</a> ، الأستاذ المساعد للتاريخ الإسلامي بجامعة كولومبيا. 
+                        <a href="https://drive.google.com/file/d/1dvJTou0K__9gK4NlOQ5i_5ww6TovcKW_/view" target="_blank">(قراءة المزيد)</a>
+                        <br><br>
+                        التصميم والترميز:
+                        <br> 
+                        <a href="https://www.sinafakour.com/" target="_blank">سينا فكور</a>
+                        <br><br>
+                        (حرك الفأرة لأسفل)
+                    </span>
+-->
+<!--
+            <section>
+                <h2>Begin scrolling to see things change</h2>
+            </section>
+-->
+        </div>
+        
+        <div class="langbuttoncontainer">
+            <div id="ar" class="ar">عربي</div>
+            <div id="en" class="ar">En</div>
+            <div id="zoomin" class="zoomin">+</div>
+        </div>
+        
+        <span id="scrollProgress"></span>
+        
+        
+        <div id="loader6">
+            <div class="loader-6 center"><span></span></div>
+        </div>
+        
+        <script type="module" src="./client.js"></script>
+    </body>
+</html>
