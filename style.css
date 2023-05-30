@@ -29,7 +29,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 5vh;
+    font-size: 4vh;
     background-color: black;
     opacity: 1;
 }
@@ -37,9 +37,8 @@ a {
 .title {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
-    padding-top: 10vh;
+    padding-top: 5vh;
     color: white;
-    font-size: 30px;
     opacity: 1;
     padding-right: 20vw;
     padding-left: 20vw;
@@ -49,9 +48,8 @@ a {
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     direction: rtl;
     font-weight: 500;
-    padding-top: 10vh;
+    padding-top: 5vh;
     color: white;
-    font-size: 30px;
     opacity: 1;
     padding-right: 20vw;
     padding-left: 20vw;
@@ -61,7 +59,6 @@ a {
 .sub {
     display: block;
     clear: both;
-    font-size: 18px;
     font-weight: 300;
 }
 
@@ -88,19 +85,19 @@ a {
 @media only screen and (max-width: 600px) {
     
     .title {
-        font-size: 30px;
+        font-size: 0.8em;
         padding-right: 10vw;
         padding-left: 10vw;
     }
 
     .title_ar {
-        font-size: 30px;
+        font-size: 0.8em;
         padding-right: 10vw;
         padding-left: 10vw;
     }
 
     .sub {
-        font-size: 18px;
+        font-size: 0.53em;
     }
 }
 
